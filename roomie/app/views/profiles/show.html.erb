@@ -1,0 +1,68 @@
+<div id="jumbo1" class="jumbotron">
+
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>User name:</strong>
+    <%= @profile ? @profile.user_name : "" %>
+  </p>
+
+  <p>
+    <strong>Gender:</strong>
+    <%= @profile ? @profile.gender : "" %>
+  </p>
+
+  <p>
+    <strong>Is a smoker:</strong>
+    <%= @profile ? Profile.profileIsASmoker.key(@profile.is_a_smoker) : "" %>
+  </p>
+
+  <p>
+    <strong>Pet friendly:</strong>
+    <%= @profile ? Profile.profilePetFriendly.key(@profile.pet_friendly) : ""%>
+  </p>
+
+  <p>
+    <strong>Cleanliness level:</strong>
+    <%= @profile ? Profile.profileCleanlinessLevel.key(@profile.cleanliness_level) : ""%>
+  </p>
+
+  <p>
+    <strong>Outgoingness level:</strong>
+    <%= @profile ? Profile.profileOutgoingnessLevel.key(@profile.outgoingness_level) : ""%>
+  </p>
+
+  <p>
+    <strong>Quietness level:</strong>
+    <%= @profile ? Profile.profileQuietnessLevel.key(@profile.quietness_level) : ""%>
+  </p>
+
+  <p>
+    <strong>Street:</strong>
+    <%= @profile ? @profile.street : ""%>
+  </p>
+
+  <p>
+    <strong>City:</strong>
+    <%= @profile ? @profile.city : ""%>
+  </p>
+
+  <p>
+    <strong>State:</strong>
+    <%= @profile ? @profile.state : ""%>
+  </p>
+
+  <p>
+    <strong>Postal code:</strong>
+    <%= @profile ? @profile.postal_code : ""%>
+  </p>
+
+<% if @profile != nil %>
+  <%= link_to 'Edit', edit_user_profile_path(@user,@profile) %> |
+  <%= link_to 'Back', user_profile_path(@user, @profile) %>
+<% else %>
+  <%= link_to 'Edit', new_user_profile_path(@user,@profile) %> |
+  <%= link_to 'Back', user_profile_path(@user, @profile) %>
+<% end %>
+</div>

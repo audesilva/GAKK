@@ -1,0 +1,2 @@
+json.extract! profile, :id, :user_name, :gender, :is_a_smoker, :pet_friendly, :cleanliness_level, :outgoingness_level, :quietness_level, :has_residence_already, :street, :city, :state, :postal_code, :created_at, :updated_at
+json.url profile_url(profile, format: :json)

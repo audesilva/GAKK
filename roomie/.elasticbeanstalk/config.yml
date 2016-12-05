@@ -1,0 +1,11 @@
+branch-defaults:
+  default:
+    environment: gakk-env
+    group_suffix: null
+global:
+  application_name: GAKK
+  default_ec2_keyname: akila-facebook
+  default_platform: Ruby 2.3 (Puma)
+  default_region: us-west-2
+  profile: eb-cli
+  sc: null

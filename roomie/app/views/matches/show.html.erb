@@ -1,0 +1,63 @@
+<div id="jumbo1" class="jumbotron">
+	<p id="notice"><%= notice %></p>
+
+	<h3 align="center">Match</h3>
+	<h3 align="center"> <%= @match.percent_match %> </h3>
+	<h4 align="center"> <%= @user2.profile.user_name %> </h4>
+
+
+	<h4 align="center"> <%= link_to "Send Message to #{@user2.profile.user_name}",
+																	:controller => "conversations",
+																	:action => "new",
+																	:user2 => @user2.id,
+																	:class => "btn btn-success" %> </h4>
+
+	<p>
+	  <strong>Gender:</strong>
+	  <%= @user2.profile.gender %>
+	</p>
+
+	<p>
+	  <strong>Smoker:</strong>
+	  <%= Profile.profileIsASmoker.key(@user2.profile.is_a_smoker) %>
+	</p>
+
+	<p>
+	  <strong>Pet Friendly:</strong>
+	  <%= Profile.profilePetFriendly.key(@user2.profile.pet_friendly) %>
+	</p>
+
+	<p>
+	  <strong>Cleanliness:</strong>
+	  <%= Profile.profileCleanlinessLevel.key(@user2.profile.cleanliness_level) %>
+	</p>
+
+	<p>
+	  <strong>Outgoingness:</strong>
+	  <%= Profile.profileOutgoingnessLevel.key(@user2.profile.outgoingness_level) %>
+	</p>
+
+	<p>
+	  <strong>Quietness:</strong>
+	  <%= Profile.profileQuietnessLevel.key(@user2.profile.quietness_level) %>
+	</p>
+
+    <% Picture.all.each do | picture | %>
+    	<% if picture.profile_id == @user2.profile.id %>
+	          <li class="span3" id="picture_<%= picture.id %>">
+	            <div class="thumbnail">
+	              <%= image_tag picture.avatar.url %>
+	              <div class="caption">
+	              </div>
+	            </div>
+	          </li>
+    	<% end %>
+    <% end %>
+
+    <% if @user2.profile.latitude? %>
+    	<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@user2.profile.latitude}%2C#{@user2.profile.longitude}&key=AIzaSyD21LGyl1gmCSllj3pjilRZaALCO5ZaA_0" %>
+    <% end %>
+
+
+
+</div>

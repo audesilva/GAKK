@@ -1,0 +1,1 @@
+json.partial! "preferences/preferences", preferences: @preferences

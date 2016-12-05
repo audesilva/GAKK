@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Preferences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gender</th>
+      <th>Smoking roommate</th>
+      <th>Pet friendly</th>
+      <th>Cleanliness level</th>
+      <th>Outgoingness level</th>
+      <th>Quietness level</th>
+      <th>Looking for Residence</th>
+      <th>Street</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @preferences.each do |preferences| %>
+      <tr>
+        <td><%= preferences.gender %></td>
+        <td><%= preferences.smoker %></td>
+        <td><%= preferences.pet_friendly %></td>
+        <td><%= preferences.cleanliness_level %></td>
+        <td><%= preferences.outgoingness_level %></td>
+        <td><%= preferences.quietness_level %></td>
+        <td><%= preferences.looking_for_residence %></td>
+        <td><%= preferences.street %></td>
+        <td><%= preferences.city %></td>
+        <td><%= preferences.state %></td>
+        <td><%= preferences.postal_code %></td>
+        <td><%= link_to 'Show', preferences %></td>
+        <td><%= link_to 'Edit', edit_preferences_path(preferences) %></td>
+        <td><%= link_to 'Destroy', preferences, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Preferences', new_preferences_path %>

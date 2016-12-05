@@ -1,0 +1,2 @@
+json.extract! preferences, :id, :user_name, :gender, :smoker, :pet_friendly, :cleanliness_level, :outgoingness_level, :quietness_level, :looking_for_residence, :street, :city, :state, :postal_code, :created_at, :updated_at
+json.url preferences_url(preferences, format: :json)

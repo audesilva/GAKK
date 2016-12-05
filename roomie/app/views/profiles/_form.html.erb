@@ -1,0 +1,160 @@
+<script type="text/javascript">
+  $(document).ready(function () {
+    if ($("#has_residence_already").is(":checked")) {
+      $("#address").show();
+    } else {
+      $("#address").hide();
+    }
+  });
+
+  $(function () {
+    $("#has_residence_already").click(function () {
+      if ($(this).is(":checked")) {
+        $("#address").show();
+      } else {
+        document.getElementById("street_address").value = "";
+        document.getElementById("city").value = "";
+        document.getElementById("postal_code").value = null;
+        var myselect = document.getElementById("state");
+        myselect.selectedIndex = 0;
+        $("#address").hide();
+      }
+    });
+  });
+
+
+</script>
+
+<div class="profileform">
+
+
+  <%= form_for([@user, @profile], url: user_profile_path(@user), :html => { :class => 'form-horizontal', multipart: true }) do |f| %>
+      <div class="actions" style="float:right; margin-top:-25px; margin-right:-25px;">
+        <%= link_to "X", home_index_path, {:class => "btn btn-default"} %>
+      </div>
+      <% if profile.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+            <ul>
+              <% profile.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :user_name %>
+        <%= f.text_field :user_name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :gender, "What is your gender?" %>
+        <%= f.select :gender, Profile.profileGender, class: "form-control" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :is_a_smoker, "Do you smoke?" %>
+        <%= f.select :is_a_smoker, Profile.profileIsASmoker, class: "form-control" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :pet_friendly, "Do you have any pets that will be living with you?" %>
+        <%= f.select :pet_friendly, Profile.profilePetFriendly, class: "form-control" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :cleanliness_level, "How clean are you?" %>
+        <%= f.select :cleanliness_level, Profile.profileCleanlinessLevel, class: "form-control" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :outgoingness_level, "How outgoing are you?" %>
+        <%= f.select :outgoingness_level, Profile.profileOutgoingnessLevel, class: "form-control" %>
+
+      </div>
+
+      <div class="field">
+        <%= f.label :quietness_level, "How quiet are you?" %>
+        <%= f.select :quietness_level, Profile.profileQuietnessLevel, class: "form-control" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :has_residence_already, "Do you already have a residence?" %>
+        <%= f.check_box :has_residence_already, :id => "has_residence_already" %>
+      </div>
+
+      <div id="address">
+
+        <div class="field">
+          <%= f.label :street %>
+          <%= f.text_field :street, :id => "street_address" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :city %>
+          <%= f.text_field :city, :id => "city" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :state %>
+          <%= f.select(:state, [' ', 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
+                                'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI', 'MN', 'MO',
+                                'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK',
+                                'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV',
+                                'WY'], {}, :id => "state")
+          %>
+        </div>
+
+        <div class="field">
+          <%= f.label :postal_code %>
+          <%= f.text_field :postal_code, :id => "postal_code" %>
+        </div>
+
+        <div class="control-group">
+          <%= f.label :pictures, :class => 'control-label' %>
+          <div class="controls">
+            <%= file_field_tag "avatars[]", type: :file, multiple: true %>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+
+      <div class="row">
+        <ul class="thumbnails files">
+          <% if @pictures %>
+              <% @pictures.each do |pic| %>
+                  <li class="span3" id="picture_<%= pic.id %>">
+                    <div class="thumbnail">
+                      <%= image_tag pic.avatar.url %>
+                      <div class="caption">
+                        <p style="text-align: center;">
+                          <!--%= link_to "Edit picture", picture_path(pic) %-->
+
+                          <%=
+                            link_to "Delete picture", pic,
+                                    :data => { :confirm => "Are you sure?" },
+                                    :method => :delete
+                          %>
+
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+              <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+      <% if @profile.street? %>
+          <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@profile.latitude}%2C#{@profile.longitude}&key=AIzaSyD21LGyl1gmCSllj3pjilRZaALCO5ZaA_0" %>
+      <% end %>
+
+  <% end %>
+</div>
+

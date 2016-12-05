@@ -49,5 +49,5 @@ fi
 #exec git diff-index --check --cached $against --
 echo "Running the cucumber tests\n"
 cd roomie
-bundle exec cucumber
+sh run_test_script.sh
 

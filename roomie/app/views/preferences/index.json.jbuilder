@@ -1,0 +1,1 @@
+json.array! @preferences, partial: 'preferences/preferences', as: :preferences

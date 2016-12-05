@@ -1,6 +1,20 @@
 <% if user_signed_in? %>
-            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-default navbar-btn pull-right' %>
+            <% if current_user.preferences != nil && current_user.profile != nil %>
+                  <%= link_to "Matches", user_matches_path(current_user), :class => 'btn btn-default btn-lg navbar-btn pull-left' %>
+            <% end %>
+            <%= link_to "Messages", mailbox_inbox_path, :class => 'btn btn-default btn-lg navbar-btn pull-left'  %>
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-default navbar-btn pull-right'  %>
+            <%= link_to 'Edit Account', edit_user_registration_path, :class => 'btn btn-default navbar-btn pull-right' %>
+            <% if current_user.profile.nil? %>
+	    		<%= link_to "Create User Profile", new_user_profile_path(current_user),  :class => 'btn btn-default navbar-btn pull-right'  %>
+	   	<% else %>
+	   	 	<%= link_to "Edit User Profile", edit_user_profile_path(current_user),  :class => 'btn btn-default navbar-btn pull-right'  %>
+	    <% end %>
+            <% if current_user.preferences.nil? %>
+                  <%= link_to "Create User Preferences", new_user_preferences_path(current_user),  :class => 'btn btn-default navbar-btn pull-right'  %>
+            <% else %>
+                  <%= link_to "Edit User Preferences", edit_user_preferences_path(current_user),  :class => 'btn btn-default navbar-btn pull-right'  %>
+          <% end %>
             <p class="navbar-text pull-right">  Logged in as <strong><%= current_user.email %></strong>. </p>
 <%else %>
             <%= link_to "Login", new_user_session_path, :class=> 'btn btn-default navbar-btn pull-right'%>

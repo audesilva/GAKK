@@ -1,0 +1,28 @@
+<div id="jumbo1" class="jumbotron">
+<p id="notice"><%= notice %></p>
+
+<h1>Matches</h1>
+<br>
+<% if @match_count > 0 %>
+  <table width="30%" class="new_table">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Percent_Match</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @matches.each do |match| %>
+        <tr>
+          <td><%= link_to  match.user_name, "matches/#{match.id}" %></td>
+          <td><%= match.percent_match %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>No matches found.  Please update your profile and preferences.</p>
+<% end %>
+<br>
+</div>

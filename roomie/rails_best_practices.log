@@ -1,0 +1,34 @@
+
+
+Source Code: |================================================================================================================================================================================|
+[31m/home/keir/workspace/GAKK/roomie/app/views/matches/index.html.erb:18 - law of demeter[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/matches/index.html.erb:18 - move code into controller[0m
+[31m/home/keir/workspace/GAKK/roomie/app/helpers/home_helper.rb:1 - remove empty helpers[0m
+[31m/home/keir/workspace/GAKK/roomie/app/helpers/matches_helper.rb:1 - remove empty helpers[0m
+[31m/home/keir/workspace/GAKK/roomie/app/helpers/profiles_helper.rb:1 - remove empty helpers[0m
+[31m/home/keir/workspace/GAKK/roomie/app/helpers/preferences_helper.rb:1 - remove empty helpers[0m
+[31m/home/keir/workspace/GAKK/roomie/app/models/preferences.rb:28 - remove unused methods (Preferences#full_street_address)[0m
+[31m/home/keir/workspace/GAKK/roomie/app/models/profile.rb:30 - remove unused methods (Profile#full_street_address)[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/preferences/_form.html.erb:30 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/preferences/_form.html.erb:30 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/preferences/_form.html.erb:30 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/preferences/_form.html.erb:117 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/preferences/_form.html.erb:118 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/preferences/_form.html.erb:118 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/profiles/_form.html.erb:31 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/profiles/_form.html.erb:31 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/profiles/_form.html.erb:31 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/profiles/_form.html.erb:120 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/profiles/_form.html.erb:121 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/profiles/_form.html.erb:121 - replace instance variable with local variable[0m
+[31m/home/keir/workspace/GAKK/roomie/Gemfile:63 - remove trailing whitespace[0m
+[31m/home/keir/workspace/GAKK/roomie/app/models/preferences.rb:22 - remove trailing whitespace[0m
+[31m/home/keir/workspace/GAKK/roomie/app/models/profile.rb:24 - remove trailing whitespace[0m
+[31m/home/keir/workspace/GAKK/roomie/config/routes.rb:6 - remove trailing whitespace[0m
+[31m/home/keir/workspace/GAKK/roomie/app/controllers/profiles_controller.rb:58 - remove trailing whitespace[0m
+[31m/home/keir/workspace/GAKK/roomie/app/controllers/preferences_controller.rb:58 - remove trailing whitespace[0m
+[31m/home/keir/workspace/GAKK/roomie/app/views/layouts/_navbar.html.erb:10 - remove trailing whitespace[0m
+[32m
+Please go to http://rails-bestpractices.com to see more useful Rails Best Practices.[0m
+[31m
+Found 27 warnings.[0m

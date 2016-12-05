@@ -1,0 +1,61 @@
+<div id="jumbo1" class="jumbotron">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @preferences ? @preferences.gender : ""%>
+</p>
+
+<p>
+  <strong>Smoking roommate:</strong>
+  <%= @preferences ? Preferences.preferencesSmoker.key(@preferences.smoker) : ""%>
+</p>
+
+<p>
+  <strong>Pet friendly:</strong>
+  <%= @preferences ? Preferences.preferencesPetFriendly.key(@preferences.pet_friendly) : ""%>
+</p>
+
+<p>
+  <strong>Cleanliness level:</strong>
+  <%= @preferences ? Preferences.preferencesCleanlinessLevel.key(@preferences.cleanliness_level) : ""%>
+</p>
+
+<p>
+  <strong>Outgoingness level:</strong>
+  <%= @preferences ? Preferences.preferencesOutgoingnessLevel.key(@preferences.outgoingness_level) : ""%>
+</p>
+
+<p>
+  <strong>Quietness level:</strong>
+  <%= @preferences ? Preferences.preferencesQuietnessLevel.key(@preferences.quietness_level) : ""%>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @preferences ? @preferences.street : ""%>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @preferences ? @preferences.city : ""%>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @preferences ? @preferences.state : ""%>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @preferences ? @preferences.postal_code : ""%>
+</p>
+
+<% if @preferences != nil %>
+  <%= link_to 'Edit', edit_user_preferences_path(@user,@preferences) %> |
+  <%= link_to 'Back', user_preferences_path(@user, @preferences) %>
+<% else %>
+  <%= link_to 'Edit', new_user_preferences_path(@user,@preferences) %> |
+  <%= link_to 'Back', user_preferences_path(@user, @preferences) %>
+<% end %>
+</div>

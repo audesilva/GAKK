@@ -4,9 +4,14 @@ class MatchesController < ApplicationController
   # GET /matches
   # GET /matches.json
   def index
-    Match.create_matches(current_user)
-    @matches = Match.where(user_id_1: current_user.id).order(percent_match: :desc).limit(25)
-    @match_count = Match.where(user_id_1: current_user.id).count()
+    if current_user.preferences != nil && current_user.profile != nil
+      Match.create_matches(current_user)
+      @matches = Match.where(user_id_1: current_user.id).order(percent_match: :desc).limit(25)
+      @match_count = Match.where(user_id_1: current_user.id).count()
+    else
+      flash[:alert] = "Please fill out profile and preferences first."
+      redirect_to home_index_path
+    end
   end
 
   # GET /matches/1

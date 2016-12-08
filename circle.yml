@@ -14,12 +14,9 @@ test:
     - chmod +x geckodriver
     - sudo mv geckodriver /home/ubuntu/bin    
   override:
-    - rake cucumber:
+    - ./run_script:
         pwd:
           roomie
-    - rake cucumber:rerun:
-	pwd:
-	  roomie	
   post:
     - rails_best_practices:
         pwd:

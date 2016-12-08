@@ -33,7 +33,7 @@ Then(/^I should see a login button$/) do
 end
 
 Then(/^I should click on the login button$/) do
-  sleep 3
+  sleep 6
   click_on("Login")
 end
 
@@ -194,9 +194,9 @@ Then(/^I should see Email not found\.$/) do
 end
 
 Then(/^I should click on Cancel my account button$/) do
-   sleep 3
+   sleep 10
    click_on("Cancel my account")
-   sleep 3
+   sleep 10
    page.driver.browser.switch_to.alert.accept
 end
 

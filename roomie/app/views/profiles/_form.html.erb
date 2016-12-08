@@ -32,6 +32,8 @@
       <div class="actions" style="float:right; margin-top:-25px; margin-right:-25px;">
         <%= link_to "X", home_index_path, {:class => "btn btn-default"} %>
       </div>
+      <h1><center>Profile</center></h1>
+      <br>
       <% if profile.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>

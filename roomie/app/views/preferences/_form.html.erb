@@ -31,6 +31,8 @@
       <div class="actions" style="float:right; margin-top:-25px; margin-right:-25px;">
         <%= link_to "X", home_index_path, {:class=>"btn btn-default"} %>
       </div>
+      <h1><center>Preferences</center></h1>
+      <br>
       <% if preferences.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(preferences.errors.count, "error") %> prohibited these preferences from being saved:</h2>

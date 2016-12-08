@@ -11,7 +11,7 @@ end
     
 
 Then(/^I should see the preferences form$/) do
-  assert_text 'New Preferences'
+  assert_text 'Preferences'
 end
     
 

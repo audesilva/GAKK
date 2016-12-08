@@ -12,11 +12,11 @@ Then(/^I click on Create User Profile link$/) do
 end
 
 Then(/^I should see the profile form$/) do
-  assert_text 'New Profile'
+  assert_text 'Profile'
 end
 
 Then(/^I should see the edit profile form$/) do
-  assert_text 'Editing Profile'
+  assert_text 'Profile'
 end
 
 

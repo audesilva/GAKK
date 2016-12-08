@@ -17,6 +17,9 @@ test:
     - rake cucumber:
         pwd:
           roomie
+    - rake cucumber:rerun:
+	pwd:
+	  roomie	
   post:
     - rails_best_practices:
         pwd:

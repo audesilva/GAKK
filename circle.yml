@@ -14,7 +14,7 @@ test:
     - chmod +x geckodriver
     - sudo mv geckodriver /home/ubuntu/bin    
   override:
-    - sh run_script.sh:
+    - rake cucumber:
         pwd:
           roomie
   post:

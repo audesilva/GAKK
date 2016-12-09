@@ -141,13 +141,17 @@ Given(/^I am an existing user with a profile$/) do
   @existing_user = FactoryGirl.create(:user_with_profile)
 end
 
+=begin
 Given(/^my profile has an address$/) do
   puts @existing_user.profile.postal_code
 end
+=end
 
+=begin
 Then(/^I should get an error saying the postal code can't be blank$/) do
   assert_text "Postal code can't be blank"
 end
+=end
 
 Then(/^I longitute and latitude should not be blank$/) do
   expect(@@existing_user.profile.latitude)

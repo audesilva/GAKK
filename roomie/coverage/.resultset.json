@@ -1219,13 +1219,17 @@
         1,
         null,
         null,
-        1,
-        0,
-        0,
         null,
         null,
-        1,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/akila/Desktop/ASE/GAKK/roomie/features/step_definitions/email_steps.rb": [
@@ -2310,6 +2314,6 @@
         null
       ]
     },
-    "timestamp": 1481292246
+    "timestamp": 1481292750
   }
 }

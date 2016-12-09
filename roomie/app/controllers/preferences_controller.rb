@@ -69,6 +69,7 @@ class PreferencesController < ApplicationController
 
   # DELETE /preferences/1
   # DELETE /preferences/1.json
+=begin
   def destroy
     @user = User.find(params[:user_id]);
     @preferences = Preferences.find(params[:id]);
@@ -79,6 +80,7 @@ class PreferencesController < ApplicationController
       format.json { head :no_content }
     end
   end
+=end
 
   private
     # Use callbacks to share common setup or constraints between actions.

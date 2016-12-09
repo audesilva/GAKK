@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-12-09T09:46:14-05:00">2016-12-09T09:46:14-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-12-09T10:07:32-05:00">2016-12-09T10:07:32-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.82%</span></span>
+    (<span class="covered_percent"><span class="green">96.53%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.7
+         4.74
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>45</b> files in total.
-    <b>814</b> relevant lines. 
-    <span class="green"><b>780</b> lines covered</span> and
-    <span class="red"><b>34</b> lines missed </span>
+    <b>807</b> relevant lines. 
+    <span class="green"><b>779</b> lines covered</span> and
+    <span class="red"><b>28</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#ed7c0bd97368d71089ed24691b5f34d5338d1c71" class="src_link" title="app/controllers/preferences_controller.rb">app/controllers/preferences_controller.rb</a></td>
-        <td class="red strong">75.0 %</td>
-        <td>94</td>
-        <td>48</td>
-        <td>36</td>
-        <td>12</td>
-        <td>2.5</td>
+        <td class="yellow strong">85.37 %</td>
+        <td>96</td>
+        <td>41</td>
+        <td>35</td>
+        <td>6</td>
+        <td>2.9</td>
       </tr>
       
       <tr>
@@ -1557,11 +1557,11 @@
         <div class="source_table" id="ed7c0bd97368d71089ed24691b5f34d5338d1c71">
   <div class="header">
     <h3>app/controllers/preferences_controller.rb</h3>
-    <h4><span class="red">75.0 %</span> covered</h4>
+    <h4><span class="yellow">85.37 %</span> covered</h4>
     <div>
-      <b>48</b> relevant lines. 
-      <span class="green"><b>36</b> lines covered</span> and
-      <span class="red"><b>12</b> lines missed.</span>
+      <b>41</b> relevant lines. 
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -1994,139 +1994,151 @@
           <code class="ruby">  # DELETE /preferences/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">=begin</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
           
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">    @user = User.find(params[:user_id]);</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby">    @preferences = Preferences.find(params[:id]);</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby">    @preferences.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
           <code class="ruby">      format.html { redirect_to user_preferences_url, notice: &#39;Preferences were successfully removed.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="79">
+        <li class="never" data-hits="" data-linenumber="80">
           
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="83">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="83">
           
-          <code class="ruby">  private</code>
+          
+          <code class="ruby">=end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
           <code class="ruby">    def set_preferences</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="86">
+        <li class="covered" data-hits="5" data-linenumber="88">
           <span class="hits">5</span>
           
           <code class="ruby">      @user = User.find(params[:user_id]);</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="87">
+        <li class="covered" data-hits="5" data-linenumber="89">
           <span class="hits">5</span>
           
           <code class="ruby">      @preferences = @user.preferences</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="90">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="89">
+        <li class="never" data-hits="" data-linenumber="91">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="91">
+        <li class="covered" data-hits="1" data-linenumber="93">
           <span class="hits">1</span>
           
           <code class="ruby">    def preferences_params</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="92">
+        <li class="covered" data-hits="8" data-linenumber="94">
           <span class="hits">8</span>
           
           <code class="ruby">      params.require(:preferences).permit(:gender, :smoker, :pet_friendly, :cleanliness_level, :outgoingness_level, :quietness_level, :looking_for_residence, :street, :city, :state, :postal_code)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="95">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="96">
           
           
           <code class="ruby">end</code>

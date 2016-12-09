@@ -85,6 +85,7 @@ class ProfilesController < ApplicationController
 
   # DELETE /profiles/1
   # DELETE /profiles/1.json
+=begin
   def destroy
     @user = User.find(params[:user_id]);
     @profile = Profile.find(params[:id]);
@@ -95,6 +96,7 @@ class ProfilesController < ApplicationController
       format.json { head :no_content }
     end
   end
+=end
 
   private
     # Use callbacks to share common setup or constraints between actions.

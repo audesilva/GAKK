@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796141b4-4a13-4195-b0c3-f52dd7227cd3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb" afterPath="$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roomie/coverage/.last_run.json" afterPath="$PROJECT_DIR$/roomie/coverage/.last_run.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roomie/coverage/.resultset.json" afterPath="$PROJECT_DIR$/roomie/coverage/.resultset.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roomie/coverage/index.html" afterPath="$PROJECT_DIR$/roomie/coverage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roomie/features/step_definitions/profile_steps.rb" afterPath="$PROJECT_DIR$/roomie/features/step_definitions/profile_steps.rb" />
     </list>
     <ignored path="GAKK.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,11 +81,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile_steps.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile_steps.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/roomie/features/step_definitions/profile_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
               <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profiles_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -128,7 +139,6 @@
         <option value="$PROJECT_DIR$/roomie/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/roomie/app/models/picture.rb" />
         <option value="$PROJECT_DIR$/roomie/app/views/profiles/_form.html.erb" />
-        <option value="$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb" />
         <option value="$PROJECT_DIR$/roomie/app/controllers/pictures_controller.rb" />
         <option value="$PROJECT_DIR$/roomie/features/support/factories.rb" />
         <option value="$PROJECT_DIR$/roomie/features/admin.feature" />
@@ -140,6 +150,7 @@
         <option value="$PROJECT_DIR$/roomie/features/step_definitions/preferences_steps.rb" />
         <option value="$PROJECT_DIR$/roomie/features/step_definitions/authentication_steps.rb" />
         <option value="$PROJECT_DIR$/roomie/features/step_definitions/profile_steps.rb" />
+        <option value="$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb" />
       </list>
     </option>
   </component>
@@ -293,6 +304,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GAKK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GAKK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roomie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -418,12 +451,12 @@
       <workItem from="1480822748225" duration="5778000" />
       <workItem from="1481103327533" duration="3983000" />
       <workItem from="1481120994899" duration="3847000" />
-      <workItem from="1481291263002" duration="1649000" />
+      <workItem from="1481291263002" duration="2338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17230000" />
+    <option name="totallyTimeSpent" value="17919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2453" y="1482" width="2453" height="1398" extended-state="6" />
@@ -739,14 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/roomie/app/views/profiles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -819,6 +844,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roomie/app/controllers/profiles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
           <folding />
         </state>
       </provider>

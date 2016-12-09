@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-12-09T09:12:30-05:00">2016-12-09T09:12:30-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-12-09T09:46:14-05:00">2016-12-09T09:46:14-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.91%</span></span>
+    (<span class="covered_percent"><span class="green">95.82%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.64
+         4.7
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>45</b> files in total.
-    <b>825</b> relevant lines. 
-    <span class="green"><b>783</b> lines covered</span> and
-    <span class="red"><b>42</b> lines missed </span>
+    <b>814</b> relevant lines. 
+    <span class="green"><b>780</b> lines covered</span> and
+    <span class="red"><b>34</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -112,12 +112,12 @@
       
       <tr>
         <td class="strong"><a href="#11723aff106627c1124a9402265b8e6623472f42" class="src_link" title="app/controllers/profiles_controller.rb">app/controllers/profiles_controller.rb</a></td>
-        <td class="red strong">72.88 %</td>
-        <td>116</td>
-        <td>59</td>
-        <td>43</td>
-        <td>16</td>
-        <td>4.6</td>
+        <td class="yellow strong">80.77 %</td>
+        <td>118</td>
+        <td>52</td>
+        <td>42</td>
+        <td>10</td>
+        <td>5.2</td>
       </tr>
       
       <tr>
@@ -482,12 +482,12 @@
       
       <tr>
         <td class="strong"><a href="#e1dc6d0864f72ffe29323b0bc6a4f6ac201ddff5" class="src_link" title="features/step_definitions/profile_steps.rb">features/step_definitions/profile_steps.rb</a></td>
-        <td class="green strong">97.53 %</td>
-        <td>157</td>
-        <td>81</td>
-        <td>79</td>
-        <td>2</td>
-        <td>4.9</td>
+        <td class="green strong">100.0 %</td>
+        <td>161</td>
+        <td>77</td>
+        <td>77</td>
+        <td>0</td>
+        <td>5.1</td>
       </tr>
       
       <tr>
@@ -2139,11 +2139,11 @@
         <div class="source_table" id="11723aff106627c1124a9402265b8e6623472f42">
   <div class="header">
     <h3>app/controllers/profiles_controller.rb</h3>
-    <h4><span class="red">72.88 %</span> covered</h4>
+    <h4><span class="yellow">80.77 %</span> covered</h4>
     <div>
-      <b>59</b> relevant lines. 
-      <span class="green"><b>43</b> lines covered</span> and
-      <span class="red"><b>16</b> lines missed.</span>
+      <b>52</b> relevant lines. 
+      <span class="green"><b>42</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
     </div>
   </div>
   
@@ -2672,175 +2672,187 @@
           <code class="ruby">  # DELETE /profiles/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="88">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">=begin</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
           
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="89">
+        <li class="never" data-hits="" data-linenumber="90">
           
           
           <code class="ruby">    @user = User.find(params[:user_id]);</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="91">
           
           
           <code class="ruby">    @profile = Profile.find(params[:id]);</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="91">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
           <code class="ruby">    @profile.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="94">
           
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="95">
           
           
           <code class="ruby">      format.html { redirect_to user_profiles_url, notice: &#39;Profile was successfully destroyed.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="95">
+        <li class="never" data-hits="" data-linenumber="96">
           
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="96">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="97">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="99">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="99">
           
-          <code class="ruby">  private</code>
+          
+          <code class="ruby">=end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="101">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
           <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="101">
+        <li class="never" data-hits="" data-linenumber="103">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="102">
+        <li class="covered" data-hits="1" data-linenumber="104">
           <span class="hits">1</span>
           
           <code class="ruby">    def load_user</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="103">
+        <li class="covered" data-hits="36" data-linenumber="105">
           <span class="hits">36</span>
           
           <code class="ruby">         @user = current_user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="104">
+        <li class="never" data-hits="" data-linenumber="106">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="105">
+        <li class="never" data-hits="" data-linenumber="107">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="106">
+        <li class="covered" data-hits="1" data-linenumber="108">
           <span class="hits">1</span>
           
           <code class="ruby">    def set_profile</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="107">
+        <li class="covered" data-hits="12" data-linenumber="109">
           <span class="hits">12</span>
           
           <code class="ruby">      @user = current_user</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="108">
+        <li class="covered" data-hits="12" data-linenumber="110">
           <span class="hits">12</span>
           
           <code class="ruby">      @profile = @user.profile</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="109">
+        <li class="never" data-hits="" data-linenumber="111">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="110">
+        <li class="never" data-hits="" data-linenumber="112">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="111">
+        <li class="never" data-hits="" data-linenumber="113">
           
           
           <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="112">
+        <li class="covered" data-hits="1" data-linenumber="114">
           <span class="hits">1</span>
           
           <code class="ruby">    def profile_params</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="113">
+        <li class="covered" data-hits="15" data-linenumber="115">
           <span class="hits">15</span>
           
           <code class="ruby">      params.require(:profile).permit(:user_name, :gender, :is_a_smoker, :pet_friendly, :cleanliness_level, :outgoingness_level, :quietness_level, :has_residence_already, :street, :city, :state, :postal_code,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="114">
+        <li class="never" data-hits="" data-linenumber="116">
           
           
           <code class="ruby">                                      :pictures )</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="115">
+        <li class="never" data-hits="" data-linenumber="117">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="116">
+        <li class="never" data-hits="" data-linenumber="118">
           
           
           <code class="ruby">end</code>
@@ -12501,11 +12513,11 @@
         <div class="source_table" id="e1dc6d0864f72ffe29323b0bc6a4f6ac201ddff5">
   <div class="header">
     <h3>features/step_definitions/profile_steps.rb</h3>
-    <h4><span class="green">97.53 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>81</b> relevant lines. 
-      <span class="green"><b>79</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>77</b> relevant lines. 
+      <span class="green"><b>77</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -13370,70 +13382,70 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="144">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="144">
           
-          <code class="ruby">Given(/^my profile has an address$/) do</code>
+          
+          <code class="ruby">=begin</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="145">
+        <li class="never" data-hits="" data-linenumber="145">
           
           
-          <code class="ruby">  puts @existing_user.profile.postal_code</code>
+          <code class="ruby">Given(/^my profile has an address$/) do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="146">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  puts @existing_user.profile.postal_code</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="147">
           
           
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="148">
+          
+          
+          <code class="ruby">=end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="149">
+          
+          
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="148">
-          <span class="hits">1</span>
-          
-          <code class="ruby">Then(/^I should get an error saying the postal code can&#39;t be blank$/) do</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="149">
-          
-          
-          <code class="ruby">  assert_text &quot;Postal code can&#39;t be blank&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="150">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">=begin</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="151">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">Then(/^I should get an error saying the postal code can&#39;t be blank$/) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="152">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="152">
           
-          <code class="ruby">Then(/^I longitute and latitude should not be blank$/) do</code>
+          
+          <code class="ruby">  assert_text &quot;Postal code can&#39;t be blank&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="153">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="153">
           
-          <code class="ruby">  expect(@@existing_user.profile.latitude)</code>
+          
+          <code class="ruby">end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="154">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="154">
           
-          <code class="ruby">  expect(@@existing_user.profile.longitude)</code>
+          
+          <code class="ruby">=end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="155">
@@ -13442,13 +13454,37 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="156">
+        <li class="covered" data-hits="1" data-linenumber="156">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Then(/^I longitute and latitude should not be blank$/) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="157">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(@@existing_user.profile.latitude)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="158">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(@@existing_user.profile.longitude)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="160">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="157">
+        <li class="never" data-hits="" data-linenumber="161">
           
           
           <code class="ruby"></code>

@@ -88,7 +88,6 @@ Then(/^I should fill out my city: (.*)$/) do |prof_city|
 end
 
 Then(/^I should select my state: (.*)$/) do |prof_state|
-  sleep 5
   select(prof_state, :from => 'state')
   @prof_state = prof_state
 end

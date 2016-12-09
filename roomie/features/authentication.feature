@@ -106,18 +106,3 @@ Then I should click on the forgotten password link
 Then I should fill in email with an non_existant email
 Then I should click on reset password button
 Then I should see Email not found.
-
-@javascript
-Scenario: An existing user should be able to cancel their account.
-Given I am an existing user
-When I go to the homepage
-Then I should see a login button
-Then I should click on the login button
-Then I should visit the login page
-Then I should fill in email with my existing email
-Then I should fill in my password with my existing password
-Then I should click the sign in button
-Then I should see Signed in successfully.
-Then I should click on Edit Account
-Then I should click on Cancel my account button
-Then I should see cancel account confirmation

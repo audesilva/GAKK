@@ -4,7 +4,6 @@ end
 
 Then(/^I should see send message to combined username 2$/) do
   click_on("Send Message to combined-username-2")
-  sleep 5
 end
 
 Then(/^I should see text: "([^"]*)"$/) do |arg1|

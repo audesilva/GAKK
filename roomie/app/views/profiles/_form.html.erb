@@ -156,7 +156,9 @@
       <% if @profile.street? %>
           <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@profile.latitude}%2C#{@profile.longitude}&key=AIzaSyD21LGyl1gmCSllj3pjilRZaALCO5ZaA_0" %>
       <% end %>
-
+      <br>
+      <% if @profile != nil %>
+        <%= link_to 'Show', user_preferences_path(@user, @preferences) %>
+      <% end %>
   <% end %>
 </div>
-

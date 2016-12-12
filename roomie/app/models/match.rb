@@ -9,6 +9,11 @@ class Match < ApplicationRecord
           if user.preferences.user_id == prof.user_id
             next
           end
+          if (user.preferences.looking_for_residence && prof.has_residence_already &&
+            user.preferences.state != prof.state) || (current_user_preferences.looking_for_residence &&
+            user.profile.has_residence_already && user.profile.state != current_user_preferences.state)
+            next
+          end
           percent_match = Match.get_percent_match(user.preferences, prof)
           percent_match_reversed = Match.get_percent_match(current_user_preferences, user.profile)
           if percent_match < 50 || percent_match_reversed < 50

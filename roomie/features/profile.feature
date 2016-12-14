@@ -347,47 +347,6 @@ Scenario: A user with an address should be able to edit their profile
     Then I should submit Update Profile
     Then I should see profile updated
 
-@javascript
-Scenario: A user who updates their profile to no longer have an address and saves it should have their old address deleted
-    Given I am an existing user 
-    When I go to the homepage
-    Then I should see a login button
-    Then I should click on the login button
-    Then I should visit the login page
-    Then I should fill in email with my existing email
-    Then I should fill in my password with my existing password
-    Then I should click the sign in button
-    Then I should see Signed in successfully.
-    Then I should see the create user profile button
-    Then I click on Create User Profile link
-    Then I should see the profile form
-    Then I should fill in my username: test-name
-    Then I should select my gender: Female
-    Then I should select my smoking status: No
-    Then I should select my pet status: No
-    Then I should select my cleanliness: Neat. Freak.
-    Then I should select my outgoingness: Not even at the party
-    Then I should select my quietnessness: You probably won't know I'm home
-    Then I should select my residence status: Yes
-    Then I should fill out my street: 100 Broadway
-    Then I should fill out my city: New York
-    Then I should select my state: NY
-    Then I shoudl fill out my postal code: 10027
-    Then I should submit Create Profile
-    Then I should see profile created.
-    Then I click on Edit User Profile link
-    Then I should see the edit profile form
-    Then I should select my residence status: No
-    Then I should submit Update Profile
-    Then I should see profile updated
-    Then I click on Edit User Profile link
-    Then I should see the edit profile form
-    Then I should select my residence status: Yes
-    Then I should fill out my street: 100 Broadway
-    Then I should fill out my city: New York
-    Then I should select my state: NY
-    Then I should submit Update Profile
-    Then I should get an error saying the postal code can't be blank
 
 Scenario: When a user creates a valid profile the longitude and latitute fields should be autofilled
     Given I am an existing user

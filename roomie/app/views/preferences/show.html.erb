@@ -1,3 +1,4 @@
+<br> <br> <br> <br>
 <div id="jumbo1" class="jumbotron">
 <p id="notice"><%= notice %></p>
 
@@ -52,10 +53,8 @@
 </p>
 
 <% if @preferences != nil %>
-  <%= link_to 'Edit', edit_user_preferences_path(@user,@preferences) %> |
-  <%= link_to 'Back', user_preferences_path(@user, @preferences) %>
+  <%= link_to 'Edit', edit_user_preferences_path(@user,@preferences) %>
 <% else %>
-  <%= link_to 'Edit', new_user_preferences_path(@user,@preferences) %> |
-  <%= link_to 'Back', user_preferences_path(@user, @preferences) %>
+  <%= link_to 'Edit', new_user_preferences_path(@user,@preferences) %>
 <% end %>
 </div>

@@ -11,7 +11,7 @@ end
     
 
 Then(/^I should see the preferences form$/) do
-  assert_text 'New Preferences'
+  assert_text 'Preferences'
 end
     
 
@@ -101,9 +101,11 @@ When(/^I click on edit user preferences$/) do
   click_on('Edit User Preferences') 
 end
 
+=begin
 When(/^I click on show preference$/) do
   click_on 'Show'
 end
+=end
 
 Then(/^I should see error message$/) do
   assert_text 'error'

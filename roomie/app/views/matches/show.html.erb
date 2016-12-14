@@ -1,9 +1,12 @@
+<br>
+<br>
+<br>
+<br>
 <div id="jumbo1" class="jumbotron">
 	<p id="notice"><%= notice %></p>
 
-	<h3 align="center">Match</h3>
-	<h3 align="center"> <%= @match.percent_match %> </h3>
-	<h4 align="center"> <%= @user2.profile.user_name %> </h4>
+	<h1 align="center"><%= @user2.profile.user_name %></h1>
+	<h3 align="center"> <%= @match.percent_match %>% Match</h3>
 
 
 	<h4 align="center"> <%= link_to "Send Message to #{@user2.profile.user_name}",
@@ -14,7 +17,7 @@
 
 	<p>
 	  <strong>Gender:</strong>
-	  <%= @user2.profile.gender %>
+	  <%= Profile.profileGender.key(@user2.profile.gender) %>
 	</p>
 
 	<p>
@@ -23,7 +26,7 @@
 	</p>
 
 	<p>
-	  <strong>Pet Friendly:</strong>
+	  <strong>Pet Owner:</strong>
 	  <%= Profile.profilePetFriendly.key(@user2.profile.pet_friendly) %>
 	</p>
 

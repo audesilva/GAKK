@@ -32,6 +32,8 @@
       <div class="actions" style="float:right; margin-top:-25px; margin-right:-25px;">
         <%= link_to "X", home_index_path, {:class => "btn btn-default"} %>
       </div>
+      <h1><center>Profile</center></h1>
+      <br>
       <% if profile.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
@@ -154,7 +156,9 @@
       <% if @profile.street? %>
           <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@profile.latitude}%2C#{@profile.longitude}&key=AIzaSyD21LGyl1gmCSllj3pjilRZaALCO5ZaA_0" %>
       <% end %>
-
+      <br>
+      <% if @profile != nil %>
+        <%= link_to 'Show', user_preferences_path(@user, @preferences) %>
+      <% end %>
   <% end %>
 </div>
-

@@ -14,27 +14,29 @@ Then(/^I should fill "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
   fill_in arg1 , :with => arg2
 end
 
+=begin
 Then(/^I should select "([^"]*)" from : "([^"]*)"$/) do |arg1, arg2|
   page.select arg1, :from => arg2
 end
+=end
 
 Then(/^I should click on "([^"]*)" button$/) do |arg1|
   click_on(arg1)
 end
 
+=begin
 Then(/^I confirm popup$/) do
   begin
     main, popup = page.driver.browser.window_handles
     within_window(popup) do
-      click_on("Ok")
+      click_on('OK')
     end
   rescue
   end
 end
+=end
 
-Then(/^I should not see "([^"]*)" button$/) do |arg1|
-  !assert_text("View")
-end
+
 
 
 

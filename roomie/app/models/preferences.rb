@@ -32,33 +32,37 @@ class Preferences < ApplicationRecord
 	belongs_to :user
 
 	def self.preferencesGender
-		[
-			nil,
-	 		'Male',
-			'Female',
-			'Non-Binary'
-		]
+		{
+			' ': nil,
+			'No Preference': 0,
+			'Male': 1,
+			'Female': 2,
+			'Non-Binary': 3
+		}
 	end
 
 	def self.preferencesSmoker
 		{
 			' ': nil,
-			'No': false,
-			'Yes': true
+			'No preference': 0,
+			'No': 1,
+			'Yes': 2
 		}
 	end
 
 	def self.preferencesPetFriendly
 		{
 			' ': nil,
-			'No': false,
-			'Yes': true
+			'No preference': 0,
+			'No': 1,
+			'Yes': 2
 		}
 	end
 
 	def self.preferencesCleanlinessLevel
 		{
 			' ': nil,
+			'No preference': 0,
 			'I want to be matched with a slob': 1,
 			'Slightly messy': 2,
 			'Average': 3,
@@ -70,6 +74,7 @@ class Preferences < ApplicationRecord
 	def self.preferencesOutgoingnessLevel
 		{
 			' ': nil,
+			'No preference': 0,
 			'I want a roommate that guards the apartment 24-7': 1,
 			'I want a roommate thats not too outgoing': 2,
             'I just want a normal roommate...': 3,
@@ -81,6 +86,7 @@ class Preferences < ApplicationRecord
 	def self.preferencesQuietnessLevel
 		{
 			' ': nil,
+			'No preference': 0,
 			"If I hear them I don't want them": 1,
 			'On the quieter side': 2,
            	'Somewhere in the middle. Considerate': 3,

@@ -13,11 +13,11 @@ class ConversationsController < ApplicationController
     #recipients = User.find(params[@matching_user.id])
     #recipients = User.where(id: conversation_params[:user2])
 
-    #puts "recipients: "
-    #puts recipients
+    puts "recipients: "
+    puts recipients
     subject1 = 'Message From Potential Roommate'
     conversation = current_user.send_message(recipients, conversation_params[:body], subject1).conversation
-    flash[:success] = "Your message was successfully sent!"
+    flash[:notice] = "Your message was successfully sent!"
     redirect_to conversation_path(conversation)
   end
 

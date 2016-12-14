@@ -35,27 +35,27 @@ class Profile < ApplicationRecord
 	belongs_to :user
 
 	def self.profileGender
-		[
-			nil,
-	 		'Male',
-			'Female',
-			'Non-Binary'
-		]
+		{
+			' ': nil,
+			'Male': 1,
+			'Female': 2,
+			'Non-Binary': 3
+		}
 	end
 
 	def self.profileIsASmoker
 		{
 			' ': nil,
-			'No': false,
-			'Yes': true
+			'No': 1,
+			'Yes': 2
 		}
 	end
 
 	def self.profilePetFriendly
 		{
 			' ': nil,
-			'No': false,
-			'Yes': true
+			'No': 1,
+			'Yes': 2
 		}
 	end
 

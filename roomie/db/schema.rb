@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161204135319) do
+ActiveRecord::Schema.define(version: 20161214144325) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -103,9 +103,9 @@ ActiveRecord::Schema.define(version: 20161204135319) do
   end
 
   create_table "preferences", force: :cascade do |t|
-    t.string   "gender"
-    t.boolean  "smoker"
-    t.boolean  "pet_friendly"
+    t.integer  "gender"
+    t.integer  "smoker"
+    t.integer  "pet_friendly"
     t.integer  "cleanliness_level"
     t.integer  "outgoingness_level"
     t.integer  "quietness_level"
@@ -124,9 +124,9 @@ ActiveRecord::Schema.define(version: 20161204135319) do
 
   create_table "profiles", force: :cascade do |t|
     t.string   "user_name"
-    t.string   "gender"
-    t.boolean  "is_a_smoker"
-    t.boolean  "pet_friendly"
+    t.integer  "gender"
+    t.integer  "is_a_smoker"
+    t.integer  "pet_friendly"
     t.integer  "cleanliness_level"
     t.integer  "outgoingness_level"
     t.integer  "quietness_level"

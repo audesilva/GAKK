@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-12-10T15:07:04-05:00">2016-12-10T15:07:04-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-12-14T13:50:21-05:00">2016-12-14T13:50:21-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.53%</span></span>
+    (<span class="covered_percent"><span class="green">96.04%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.74
+         5.17
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>45</b> files in total.
-    <b>807</b> relevant lines. 
-    <span class="green"><b>779</b> lines covered</span> and
-    <span class="red"><b>28</b> lines missed </span>
+    <b>858</b> relevant lines. 
+    <span class="green"><b>824</b> lines covered</span> and
+    <span class="red"><b>34</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -97,7 +97,7 @@
         <td>20</td>
         <td>18</td>
         <td>2</td>
-        <td>3.2</td>
+        <td>3.4</td>
       </tr>
       
       <tr>
@@ -192,12 +192,12 @@
       
       <tr>
         <td class="strong"><a href="#eace4ca72665d906ea9133c36abccbf39c8c6da7" class="src_link" title="app/models/match.rb">app/models/match.rb</a></td>
-        <td class="green strong">97.37 %</td>
-        <td>52</td>
-        <td>38</td>
-        <td>37</td>
-        <td>1</td>
-        <td>21.5</td>
+        <td class="yellow strong">87.93 %</td>
+        <td>94</td>
+        <td>58</td>
+        <td>51</td>
+        <td>7</td>
+        <td>23.4</td>
       </tr>
       
       <tr>
@@ -213,11 +213,11 @@
       <tr>
         <td class="strong"><a href="#b8f2f368777b0c00df6811332f3b0000f3f494ab" class="src_link" title="app/models/preferences.rb">app/models/preferences.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>93</td>
+        <td>99</td>
         <td>32</td>
         <td>32</td>
         <td>0</td>
-        <td>7.1</td>
+        <td>7.3</td>
       </tr>
       
       <tr>
@@ -227,7 +227,7 @@
         <td>34</td>
         <td>34</td>
         <td>0</td>
-        <td>11.2</td>
+        <td>11.6</td>
       </tr>
       
       <tr>
@@ -463,9 +463,9 @@
       <tr>
         <td class="strong"><a href="#a7390d9568e126c48097e8a388f8eb4dc9cfad0e" class="src_link" title="features/step_definitions/matches_steps.rb">features/step_definitions/matches_steps.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>44</td>
-        <td>22</td>
-        <td>22</td>
+        <td>48</td>
+        <td>24</td>
+        <td>24</td>
         <td>0</td>
         <td>4.4</td>
       </tr>
@@ -492,10 +492,10 @@
       
       <tr>
         <td class="strong"><a href="#091ddc15e79ecdef865e37d818f6db1503aa89d7" class="src_link" title="features/support/factories.rb">features/support/factories.rb</a></td>
-        <td class="green strong">99.32 %</td>
-        <td>197</td>
-        <td>146</td>
-        <td>145</td>
+        <td class="green strong">99.43 %</td>
+        <td>235</td>
+        <td>175</td>
+        <td>174</td>
         <td>1</td>
         <td>1.2</td>
       </tr>
@@ -1256,26 +1256,26 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="7">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
           
           <code class="ruby">    if current_user.preferences != nil &amp;&amp; current_user.profile != nil</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="8">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
           
           <code class="ruby">      Match.create_matches(current_user)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="9">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
           
           <code class="ruby">      @matches = Match.where(user_id_1: current_user.id).order(percent_match: :desc).limit(25)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="10">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
           
           <code class="ruby">      @match_count = Match.where(user_id_1: current_user.id).count()</code>
         </li>
@@ -3177,11 +3177,11 @@
         <div class="source_table" id="eace4ca72665d906ea9133c36abccbf39c8c6da7">
   <div class="header">
     <h3>app/models/match.rb</h3>
-    <h4><span class="green">97.37 %</span> covered</h4>
+    <h4><span class="yellow">87.93 %</span> covered</h4>
     <div>
-      <b>38</b> relevant lines. 
-      <span class="green"><b>37</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>58</b> relevant lines. 
+      <span class="green"><b>51</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -3206,44 +3206,44 @@
           <code class="ruby">  def self.create_matches(user)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="4">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="4">
+          <span class="hits">11</span>
           
           <code class="ruby">    if user.preferences != nil &amp;&amp; user.profile != nil</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="5">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
           
           <code class="ruby">      Match.where(user_id_1: user.id).destroy_all</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="6">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="6">
+          <span class="hits">11</span>
           
           <code class="ruby">      Profile.all.each do |prof|</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="7">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="24" data-linenumber="7">
+          <span class="hits">24</span>
           
           <code class="ruby">        current_user_preferences = User.find(prof.user_id).preferences</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="8">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="24" data-linenumber="8">
+          <span class="hits">24</span>
           
           <code class="ruby">        if prof != nil &amp;&amp; current_user_preferences != nil</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="9">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="24" data-linenumber="9">
+          <span class="hits">24</span>
           
           <code class="ruby">          if user.preferences.user_id == prof.user_id</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="10">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
           
           <code class="ruby">            next</code>
         </li>
@@ -3254,26 +3254,26 @@
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="12">
-          <span class="hits">12</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">          percent_match = Match.get_percent_match(user.preferences, prof)</code>
+          
+          <code class="ruby">          if (user.preferences.looking_for_residence &amp;&amp; prof.has_residence_already &amp;&amp;</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="13">
-          <span class="hits">12</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">          percent_match_reversed = Match.get_percent_match(current_user_preferences, user.profile)</code>
+          
+          <code class="ruby">            user.preferences.state != prof.state) || (current_user_preferences.looking_for_residence &amp;&amp;</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="14">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="13" data-linenumber="14">
+          <span class="hits">13</span>
           
-          <code class="ruby">          if percent_match &lt; 50 || percent_match_reversed &lt; 50</code>
+          <code class="ruby">            user.profile.has_residence_already &amp;&amp; user.profile.state != current_user_preferences.state)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="15">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
           
           <code class="ruby">            next</code>
         </li>
@@ -3284,217 +3284,469 @@
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="17">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="13" data-linenumber="17">
+          <span class="hits">13</span>
           
-          <code class="ruby">          Match.create(user_id_1: user.id, user_id_2: prof.user_id, percent_match: percent_match, user_name: prof.user_name)</code>
+          <code class="ruby">          percent_match = Match.get_percent_match(user.preferences, prof)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="13" data-linenumber="18">
+          <span class="hits">13</span>
           
-          
-          <code class="ruby">        end</code>
+          <code class="ruby">          percent_match_reversed = Match.get_percent_match(current_user_preferences, user.profile)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="13" data-linenumber="19">
+          <span class="hits">13</span>
           
-          
-          <code class="ruby">      end</code>
+          <code class="ruby">          if percent_match &lt; 50 || percent_match_reversed &lt; 50</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">            next</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">          end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="covered" data-hits="10" data-linenumber="22">
+          <span class="hits">10</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">          Match.create(user_id_1: user.id, user_id_2: prof.user_id, percent_match: percent_match, user_name: prof.user_name)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">  def self.get_percent_match(pref, prof)</code>
+          
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="24">
-          <span class="hits">24</span>
+        <li class="never" data-hits="" data-linenumber="24">
           
-          <code class="ruby">    gender_score = (pref.gender == prof.gender) ? 100 : 0</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="25">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    smoker_score = (pref.smoker == prof.is_a_smoker) ? 100 : 0</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="26">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    pet_friendly_score = (pref.pet_friendly == prof.pet_friendly) ? 100 : 0</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="27">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    cleanliness_level_score   = Match.get_attribute_weight(pref.cleanliness_level, prof.cleanliness_level)</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="28">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    outgoingness_level_score  = Match.get_attribute_weight(pref.outgoingness_level, prof.outgoingness_level)</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="29">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    quietness_level_score     = Match.get_attribute_weight(pref.quietness_level, prof.quietness_level)</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="30">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    current_number_of_attributes = 6</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="31">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    highest_potential_positive_sum = 100</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="32">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    scores_sum = cleanliness_level_score + outgoingness_level_score + quietness_level_score + gender_score + smoker_score + pet_friendly_score</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="33">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    percent_match = 100 * scores_sum / (current_number_of_attributes * highest_potential_positive_sum)</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="34">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    return percent_match</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.get_attribute_weight(value1,value2)</code>
-        </li>
-      
-        <li class="covered" data-hits="72" data-linenumber="38">
-          <span class="hits">72</span>
-          
-          <code class="ruby">    q = value1-value2</code>
-        </li>
-      
-        <li class="covered" data-hits="72" data-linenumber="39">
-          <span class="hits">72</span>
-          
-          <code class="ruby">    q = q.abs</code>
-        </li>
-      
-        <li class="covered" data-hits="72" data-linenumber="40">
-          <span class="hits">72</span>
-          
-          <code class="ruby">    if q == 0</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="41">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      return 100</code>
-        </li>
-      
-        <li class="covered" data-hits="70" data-linenumber="42">
-          <span class="hits">70</span>
-          
-          <code class="ruby">    elsif q == 1</code>
-        </li>
-      
-        <li class="covered" data-hits="52" data-linenumber="43">
-          <span class="hits">52</span>
-          
-          <code class="ruby">      return 75</code>
-        </li>
-      
-        <li class="covered" data-hits="18" data-linenumber="44">
-          <span class="hits">18</span>
-          
-          <code class="ruby">    elsif q == 2</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
-          
-          <code class="ruby">      return 50</code>
-        </li>
-      
-        <li class="covered" data-hits="18" data-linenumber="46">
-          <span class="hits">18</span>
-          
-          <code class="ruby">    elsif q == 3</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="47">
-          <span class="hits">9</span>
-          
-          <code class="ruby">      return 25</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="49">
-          <span class="hits">9</span>
-          
-          <code class="ruby">      return 0</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.get_percent_match(pref, prof)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="29">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    if (pref.gender != 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="25" data-linenumber="30">
+          <span class="hits">25</span>
+          
+          <code class="ruby">      gender_score = Match.get_attribute_weight_2(pref.gender, prof.gender)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      gender_score = Match.get_attribute_weight_2(prof.gender, prof.gender)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="34">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    if (pref.smoker != 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="35">
+          <span class="hits">26</span>
+          
+          <code class="ruby">      smoker_score = Match.get_attribute_weight_2(pref.smoker, prof.is_a_smoker)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">      smoker_score = Match.get_attribute_weight_2(prof.is_a_smoker, prof.is_a_smoker)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="39">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    if (pref.pet_friendly != 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="40">
+          <span class="hits">26</span>
+          
+          <code class="ruby">      pet_friendly_score = Match.get_attribute_weight_2(pref.pet_friendly, prof.pet_friendly)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">      pet_friendly_score = Match.get_attribute_weight_2(prof.pet_friendly, prof.pet_friendly)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="44">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    if (pref.cleanliness_level != 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="45">
+          <span class="hits">26</span>
+          
+          <code class="ruby">      cleanliness_level_score   = Match.get_attribute_weight_5(pref.cleanliness_level, prof.cleanliness_level)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
+          
+          <code class="ruby">      cleanliness_level_score  = Match.get_attribute_weight_5(prof.cleanliness_level, prof.cleanliness_level)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="49">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    if (pref.outgoingness_level != 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="50">
+          <span class="hits">26</span>
+          
+          <code class="ruby">      outgoingness_level_score  = Match.get_attribute_weight_5(pref.outgoingness_level, prof.outgoingness_level)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">      outgoingness_level_score  = Match.get_attribute_weight_5(prof.outgoingness_level, prof.outgoingness_level)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="54">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    if (pref.quietness_level != 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="55">
+          <span class="hits">26</span>
+          
+          <code class="ruby">      quietness_level_score     = Match.get_attribute_weight_5(pref.quietness_level, prof.quietness_level)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">      quietness_level_score  = Match.get_attribute_weight_5(prof.quietness_level, prof.quietness_level)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="59">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    current_number_of_attributes = 6</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="60">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    highest_potential_positive_sum = 100</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="61">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    scores_sum = cleanliness_level_score + outgoingness_level_score + quietness_level_score + gender_score + smoker_score + pet_friendly_score</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="62">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    percent_match = 100 * scores_sum / (current_number_of_attributes * highest_potential_positive_sum)</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="63">
+          <span class="hits">26</span>
+          
+          <code class="ruby">    return percent_match</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.get_attribute_weight_5(value1,value2)</code>
+        </li>
+      
+        <li class="covered" data-hits="78" data-linenumber="67">
+          <span class="hits">78</span>
+          
+          <code class="ruby">    q = value1-value2</code>
+        </li>
+      
+        <li class="covered" data-hits="78" data-linenumber="68">
+          <span class="hits">78</span>
+          
+          <code class="ruby">    q = q.abs</code>
+        </li>
+      
+        <li class="covered" data-hits="78" data-linenumber="69">
+          <span class="hits">78</span>
+          
+          <code class="ruby">    if q == 0</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="70">
+          <span class="hits">7</span>
+          
+          <code class="ruby">      return 100</code>
+        </li>
+      
+        <li class="covered" data-hits="71" data-linenumber="71">
+          <span class="hits">71</span>
+          
+          <code class="ruby">    elsif q == 1</code>
+        </li>
+      
+        <li class="covered" data-hits="53" data-linenumber="72">
+          <span class="hits">53</span>
+          
+          <code class="ruby">      return 75</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="73">
+          <span class="hits">18</span>
+          
+          <code class="ruby">    elsif q == 2</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="74">
+          
+          
+          <code class="ruby">      return 50</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="75">
+          <span class="hits">18</span>
+          
+          <code class="ruby">    elsif q == 3</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="76">
+          <span class="hits">9</span>
+          
+          <code class="ruby">      return 25</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="78">
+          <span class="hits">9</span>
+          
+          <code class="ruby">      return 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="83">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.get_attribute_weight_2(value1,value2)</code>
+        </li>
+      
+        <li class="covered" data-hits="78" data-linenumber="84">
+          <span class="hits">78</span>
+          
+          <code class="ruby">    q = value1-value2</code>
+        </li>
+      
+        <li class="covered" data-hits="78" data-linenumber="85">
+          <span class="hits">78</span>
+          
+          <code class="ruby">    q = q.abs</code>
+        </li>
+      
+        <li class="covered" data-hits="78" data-linenumber="86">
+          <span class="hits">78</span>
+          
+          <code class="ruby">    if q == 0</code>
+        </li>
+      
+        <li class="covered" data-hits="59" data-linenumber="87">
+          <span class="hits">59</span>
+          
+          <code class="ruby">      return 100</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="19" data-linenumber="89">
+          <span class="hits">19</span>
+          
+          <code class="ruby">      return 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
           
           
           <code class="ruby">end</code>
@@ -3686,8 +3938,8 @@
           <code class="ruby">	def smoker_presence</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="21">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="21">
+          <span class="hits">36</span>
           
           <code class="ruby">		errors.add(:smoker, &quot;can&#39;t be blank&quot;) if smoker.nil?</code>
         </li>
@@ -3710,8 +3962,8 @@
           <code class="ruby">	def pet_friendly_presence</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="25">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="25">
+          <span class="hits">36</span>
           
           <code class="ruby">		errors.add(:pet_friendly, &quot;can&#39;t be blank&quot;) if pet_friendly.nil?</code>
         </li>
@@ -3734,8 +3986,8 @@
           <code class="ruby">	def full_street_address</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="29">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="29">
+          <span class="hits">36</span>
           
           <code class="ruby">		[street, city, state, postal_code].compact.join(&#39;, &#39;)</code>
         </li>
@@ -3773,352 +4025,388 @@
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">		[</code>
+          <code class="ruby">		{</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="36">
-          <span class="hits">17</span>
+        <li class="never" data-hits="" data-linenumber="36">
           
-          <code class="ruby">			nil,</code>
+          
+          <code class="ruby">			&#39; &#39;: nil,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">	 		&#39;Male&#39;,</code>
+          <code class="ruby">			&#39;No Preference&#39;: 0,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">			&#39;Female&#39;,</code>
+          <code class="ruby">			&#39;Male&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">			&#39;Non-Binary&#39;</code>
+          <code class="ruby">			&#39;Female&#39;: 2,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">		]</code>
+          <code class="ruby">			&#39;Non-Binary&#39;: 3</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="covered" data-hits="17" data-linenumber="41">
+          <span class="hits">17</span>
           
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">		}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">	def self.preferencesSmoker</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">		{</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">			&#39; &#39;: nil,</code>
+          <code class="ruby">		{</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">			&#39;No&#39;: false,</code>
+          <code class="ruby">			&#39; &#39;: nil,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">			&#39;Yes&#39;: true</code>
+          <code class="ruby">			&#39;No preference&#39;: 0,</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="48">
-          <span class="hits">17</span>
+        <li class="never" data-hits="" data-linenumber="48">
           
-          <code class="ruby">		}</code>
+          
+          <code class="ruby">			&#39;No&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
+          <code class="ruby">			&#39;Yes&#39;: 2</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="50">
+          <span class="hits">17</span>
+          
+          <code class="ruby">		}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
           <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def self.preferencesPetFriendly</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">		{</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">			&#39; &#39;: nil,</code>
+          <code class="ruby">	def self.preferencesPetFriendly</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">			&#39;No&#39;: false,</code>
+          <code class="ruby">		{</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">			&#39;Yes&#39;: true</code>
+          <code class="ruby">			&#39; &#39;: nil,</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="56">
-          <span class="hits">17</span>
+        <li class="never" data-hits="" data-linenumber="56">
           
-          <code class="ruby">		}</code>
+          
+          <code class="ruby">			&#39;No preference&#39;: 0,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">			&#39;No&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">			&#39;Yes&#39;: 2</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="17" data-linenumber="59">
+          <span class="hits">17</span>
           
-          <code class="ruby">	def self.preferencesCleanlinessLevel</code>
+          <code class="ruby">		}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">		{</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">			&#39; &#39;: nil,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">			&#39;I want to be matched with a slob&#39;: 1,</code>
+          <code class="ruby">	def self.preferencesCleanlinessLevel</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">			&#39;Slightly messy&#39;: 2,</code>
+          <code class="ruby">		{</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">			&#39;Average&#39;: 3,</code>
+          <code class="ruby">			&#39; &#39;: nil,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">			&#39;Clean&#39;: 4,</code>
+          <code class="ruby">			&#39;No preference&#39;: 0,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">			&#39;I expect the apartment to sparkle&#39;: 5</code>
+          <code class="ruby">			&#39;I want to be matched with a slob&#39;: 1,</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="67">
-          <span class="hits">17</span>
+        <li class="never" data-hits="" data-linenumber="67">
           
-          <code class="ruby">		}</code>
+          
+          <code class="ruby">			&#39;Slightly messy&#39;: 2,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">			&#39;Average&#39;: 3,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">			&#39;Clean&#39;: 4,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="70">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="70">
           
-          <code class="ruby">	def self.preferencesOutgoingnessLevel</code>
+          
+          <code class="ruby">			&#39;I expect the apartment to sparkle&#39;: 5</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="covered" data-hits="17" data-linenumber="71">
+          <span class="hits">17</span>
           
-          
-          <code class="ruby">		{</code>
+          <code class="ruby">		}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">			&#39; &#39;: nil,</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">			&#39;I want a roommate that guards the apartment 24-7&#39;: 1,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">			&#39;I want a roommate thats not too outgoing&#39;: 2,</code>
+          <code class="ruby">	def self.preferencesOutgoingnessLevel</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">            &#39;I just want a normal roommate...&#39;: 3,</code>
+          <code class="ruby">		{</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">            &#39;I want a roommate that likes meeting new people often&#39;: 4,</code>
+          <code class="ruby">			&#39; &#39;: nil,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">            &#39;I want a roommate that is almost never home&#39;: 5</code>
+          <code class="ruby">			&#39;No preference&#39;: 0,</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="78">
-          <span class="hits">17</span>
+        <li class="never" data-hits="" data-linenumber="78">
           
-          <code class="ruby">		}</code>
+          
+          <code class="ruby">			&#39;I want a roommate that guards the apartment 24-7&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">			&#39;I want a roommate thats not too outgoing&#39;: 2,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">            &#39;I just want a normal roommate...&#39;: 3,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="81">
           
-          <code class="ruby">	def self.preferencesQuietnessLevel</code>
+          
+          <code class="ruby">            &#39;I want a roommate that likes meeting new people often&#39;: 4,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">		{</code>
+          <code class="ruby">            &#39;I want a roommate that is almost never home&#39;: 5</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
-          
-          
-          <code class="ruby">			&#39; &#39;: nil,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="84">
-          
-          
-          <code class="ruby">			&quot;If I hear them I don&#39;t want them&quot;: 1,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="85">
-          
-          
-          <code class="ruby">			&#39;On the quieter side&#39;: 2,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="86">
-          
-          
-          <code class="ruby">           	&#39;Somewhere in the middle. Considerate&#39;: 3,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="87">
-          
-          
-          <code class="ruby">           	&#39;A vocal roommate&#39;: 4,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="88">
-          
-          
-          <code class="ruby">           	&#39;I was going to buy noise-cancelling headphones anyway&#39;: 5</code>
-        </li>
-      
-        <li class="covered" data-hits="17" data-linenumber="89">
+        <li class="covered" data-hits="17" data-linenumber="83">
           <span class="hits">17</span>
           
           <code class="ruby">		}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="91">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="85">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def self.preferencesQuietnessLevel</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby">		{</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">			&#39; &#39;: nil,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby">			&#39;No preference&#39;: 0,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">			&quot;If I hear them I don&#39;t want them&quot;: 1,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">			&#39;On the quieter side&#39;: 2,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">           	&#39;Somewhere in the middle. Considerate&#39;: 3,</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">           	&#39;A vocal roommate&#39;: 4,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">           	&#39;I was going to buy noise-cancelling headphones anyway&#39;: 5</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="95">
+          <span class="hits">17</span>
+          
+          <code class="ruby">		}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
           
           
           <code class="ruby"></code>
@@ -4280,8 +4568,8 @@
           <code class="ruby">	def is_a_smoker_presence</code>
         </li>
       
-        <li class="covered" data-hits="49" data-linenumber="24">
-          <span class="hits">49</span>
+        <li class="covered" data-hits="51" data-linenumber="24">
+          <span class="hits">51</span>
           
           <code class="ruby">		errors.add(:is_a_smoker, &quot;can&#39;t be blank&quot;) if is_a_smoker.nil?</code>
         </li>
@@ -4304,8 +4592,8 @@
           <code class="ruby">	def pet_friendly_presence</code>
         </li>
       
-        <li class="covered" data-hits="49" data-linenumber="28">
-          <span class="hits">49</span>
+        <li class="covered" data-hits="51" data-linenumber="28">
+          <span class="hits">51</span>
           
           <code class="ruby">		errors.add(:pet_friendly, &quot;can&#39;t be blank&quot;) if pet_friendly.nil?</code>
         </li>
@@ -4328,8 +4616,8 @@
           <code class="ruby">	def full_street_address</code>
         </li>
       
-        <li class="covered" data-hits="49" data-linenumber="32">
-          <span class="hits">49</span>
+        <li class="covered" data-hits="51" data-linenumber="32">
+          <span class="hits">51</span>
           
           <code class="ruby">		[street, city, state, postal_code].compact.join(&#39;, &#39;)</code>
         </li>
@@ -4367,37 +4655,37 @@
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">		[</code>
+          <code class="ruby">		{</code>
         </li>
       
-        <li class="covered" data-hits="30" data-linenumber="39">
-          <span class="hits">30</span>
+        <li class="never" data-hits="" data-linenumber="39">
           
-          <code class="ruby">			nil,</code>
+          
+          <code class="ruby">			&#39; &#39;: nil,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">	 		&#39;Male&#39;,</code>
+          <code class="ruby">			&#39;Male&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">			&#39;Female&#39;,</code>
+          <code class="ruby">			&#39;Female&#39;: 2,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">			&#39;Non-Binary&#39;</code>
+          <code class="ruby">			&#39;Non-Binary&#39;: 3</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="covered" data-hits="36" data-linenumber="43">
+          <span class="hits">36</span>
           
-          
-          <code class="ruby">		]</code>
+          <code class="ruby">		}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
@@ -4433,13 +4721,13 @@
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">			&#39;No&#39;: false,</code>
+          <code class="ruby">			&#39;No&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">			&#39;Yes&#39;: true</code>
+          <code class="ruby">			&#39;Yes&#39;: 2</code>
         </li>
       
         <li class="covered" data-hits="36" data-linenumber="51">
@@ -4481,13 +4769,13 @@
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">			&#39;No&#39;: false,</code>
+          <code class="ruby">			&#39;No&#39;: 1,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">			&#39;Yes&#39;: true</code>
+          <code class="ruby">			&#39;Yes&#39;: 2</code>
         </li>
       
         <li class="covered" data-hits="36" data-linenumber="59">
@@ -8600,8 +8888,8 @@
           <code class="ruby">When(/^I go to the homepage$/) do</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="8">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="45" data-linenumber="8">
+          <span class="hits">45</span>
           
           <code class="ruby">  visit &#39;/&#39;</code>
         </li>
@@ -8744,8 +9032,8 @@
           <code class="ruby">Then(/^I should see a login button$/) do</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="32">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="41" data-linenumber="32">
+          <span class="hits">41</span>
           
           <code class="ruby">  find_link(&#39;Login&#39;).visible?</code>
         </li>
@@ -8768,8 +9056,8 @@
           <code class="ruby">Then(/^I should click on the login button$/) do</code>
         </li>
       
-        <li class="covered" data-hits="41" data-linenumber="36">
-          <span class="hits">41</span>
+        <li class="covered" data-hits="42" data-linenumber="36">
+          <span class="hits">42</span>
           
           <code class="ruby">  click_on(&quot;Login&quot;)</code>
         </li>
@@ -8792,8 +9080,8 @@
           <code class="ruby">Then(/^I should visit the login page$/) do</code>
         </li>
       
-        <li class="covered" data-hits="38" data-linenumber="40">
-          <span class="hits">38</span>
+        <li class="covered" data-hits="39" data-linenumber="40">
+          <span class="hits">39</span>
           
           <code class="ruby">  visit new_user_session_path</code>
         </li>
@@ -8870,8 +9158,8 @@
           <code class="ruby">Then(/^I should click the sign in button$/) do</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="53">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="41" data-linenumber="53">
+          <span class="hits">41</span>
           
           <code class="ruby">  click_on(&quot;Sign in&quot;)</code>
         </li>
@@ -8894,8 +9182,8 @@
           <code class="ruby">Then(/^I should see Signed in successfully\.$/) do</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="57">
-          <span class="hits">36</span>
+        <li class="covered" data-hits="37" data-linenumber="57">
+          <span class="hits">37</span>
           
           <code class="ruby">  assert_text(&#39;Signed in successfully.&#39;)</code>
         </li>
@@ -11525,8 +11813,8 @@
     <h3>features/step_definitions/matches_steps.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -11561,13 +11849,13 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">Given(/^other users exist with profiles that are similar\.$/) do</code>
+          <code class="ruby">Given(/^I am an existing user with a profile and a partial preference$/) do</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="6">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          <code class="ruby">  @user_with_both_2 = FactoryGirl.create(:user_with_both_2)</code>
+          <code class="ruby">  @@user_with_both_4 = FactoryGirl.create(:user_with_both_4)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -11585,13 +11873,13 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">Given(/^other users exist with profiles that are dissimilar\.$/) do</code>
+          <code class="ruby">Given(/^other users exist with profiles that are similar\.$/) do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="9" data-linenumber="10">
+          <span class="hits">9</span>
           
-          <code class="ruby">  @user_with_both_3 = FactoryGirl.create(:user_with_both_3)</code>
+          <code class="ruby">  @user_with_both_2 = FactoryGirl.create(:user_with_both_2)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -11609,13 +11897,13 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should fill in the field email with: (.*)$/) do |email|</code>
+          <code class="ruby">Given(/^other users exist with profiles that are dissimilar\.$/) do</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="14">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
-          <code class="ruby">  fill_in &#39;Email&#39;, :with =&gt; email</code>
+          <code class="ruby">  @user_with_both_3 = FactoryGirl.create(:user_with_both_3)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -11633,13 +11921,13 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should fill in my field password with: (.*)$/) do |password|</code>
+          <code class="ruby">Then(/^I should fill in the field email with: (.*)$/) do |email|</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="18">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="18">
+          <span class="hits">14</span>
           
-          <code class="ruby">  fill_in &#39;Password&#39;, :with =&gt; password</code>
+          <code class="ruby">  fill_in &#39;Email&#39;, :with =&gt; email</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
@@ -11657,13 +11945,13 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should see the matches button\.$/) do</code>
+          <code class="ruby">Then(/^I should fill in my field password with: (.*)$/) do |password|</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="22">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="14" data-linenumber="22">
+          <span class="hits">14</span>
           
-          <code class="ruby">  assert_text &#39;Matches&#39;</code>
+          <code class="ruby">  fill_in &#39;Password&#39;, :with =&gt; password</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
@@ -11681,13 +11969,13 @@
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I click on matches button\.$/) do</code>
+          <code class="ruby">Then(/^I should see the matches button\.$/) do</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="26">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="26">
+          <span class="hits">11</span>
           
-          <code class="ruby">  click_on(&#39;Matches&#39;) </code>
+          <code class="ruby">  assert_text &#39;Matches&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
@@ -11705,13 +11993,13 @@
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should see user (.*)$/) do |user_name|</code>
+          <code class="ruby">Then(/^I click on matches button\.$/) do</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="30">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="11" data-linenumber="30">
+          <span class="hits">11</span>
           
-          <code class="ruby">  assert_text user_name</code>
+          <code class="ruby">  click_on(&#39;Matches&#39;) </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
@@ -11729,13 +12017,13 @@
         <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should not see user (.*)$/) do |user_name|</code>
+          <code class="ruby">Then(/^I should see user (.*)$/) do |user_name|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="34">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="10" data-linenumber="34">
+          <span class="hits">10</span>
           
-          <code class="ruby">  assert_no_text user_name</code>
+          <code class="ruby">  assert_text user_name</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
@@ -11753,13 +12041,13 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should see a matching value of (.*)$/) do |value|</code>
+          <code class="ruby">Then(/^I should not see user (.*)$/) do |user_name|</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="38">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="2" data-linenumber="38">
+          <span class="hits">2</span>
           
-          <code class="ruby">  assert_text value</code>
+          <code class="ruby">  assert_no_text user_name</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -11777,13 +12065,13 @@
         <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
-          <code class="ruby">Then(/^I should see no matches found$/) do</code>
+          <code class="ruby">Then(/^I should see a matching value of (.*)$/) do |value|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="10" data-linenumber="42">
+          <span class="hits">10</span>
           
-          <code class="ruby">  assert_text &#39;No matches found.  Please update your profile and preferences.&#39; </code>
+          <code class="ruby">  assert_text value</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
@@ -11793,6 +12081,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Then(/^I should see no matches found$/) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  assert_text &#39;No matches found.  Please update your profile and preferences.&#39; </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby"></code>
@@ -13509,10 +13821,10 @@
         <div class="source_table" id="091ddc15e79ecdef865e37d818f6db1503aa89d7">
   <div class="header">
     <h3>features/support/factories.rb</h3>
-    <h4><span class="green">99.32 %</span> covered</h4>
+    <h4><span class="green">99.43 %</span> covered</h4>
     <div>
-      <b>146</b> relevant lines. 
-      <span class="green"><b>145</b> lines covered</span> and
+      <b>175</b> relevant lines. 
+      <span class="green"><b>174</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -13739,19 +14051,19 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Female&#39;</code>
+          <code class="ruby">    gender 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">    is_a_smoker false</code>
+          <code class="ruby">    is_a_smoker 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly false</code>
+          <code class="ruby">    pet_friendly 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="40">
@@ -13901,19 +14213,19 @@
         <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Female&#39;</code>
+          <code class="ruby">    gender 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
-          <code class="ruby">    smoker false</code>
+          <code class="ruby">    smoker 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly false</code>
+          <code class="ruby">    pet_friendly 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
@@ -14063,19 +14375,19 @@
         <li class="covered" data-hits="1" data-linenumber="91">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Female&#39;</code>
+          <code class="ruby">    gender 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="92">
           <span class="hits">1</span>
           
-          <code class="ruby">    smoker false</code>
+          <code class="ruby">    smoker 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="93">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly false</code>
+          <code class="ruby">    pet_friendly 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="94">
@@ -14153,19 +14465,19 @@
         <li class="covered" data-hits="1" data-linenumber="106">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Female&#39;</code>
+          <code class="ruby">    gender 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="107">
           <span class="hits">1</span>
           
-          <code class="ruby">    is_a_smoker false</code>
+          <code class="ruby">    is_a_smoker 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="108">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly false</code>
+          <code class="ruby">    pet_friendly 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="109">
@@ -14246,14 +14558,14 @@
           <code class="ruby">      after(:create) do |combined_user_2|</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="122">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="9" data-linenumber="122">
+          <span class="hits">9</span>
           
           <code class="ruby">        create(:preferences_for_combined_2, user: combined_user_2)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="123">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="9" data-linenumber="123">
+          <span class="hits">9</span>
           
           <code class="ruby">        create(:profile_for_combined_2, user: combined_user_2)</code>
         </li>
@@ -14291,19 +14603,19 @@
         <li class="covered" data-hits="1" data-linenumber="129">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Female&#39;</code>
+          <code class="ruby">    gender 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="130">
           <span class="hits">1</span>
           
-          <code class="ruby">    smoker false</code>
+          <code class="ruby">    smoker 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="131">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly false</code>
+          <code class="ruby">    pet_friendly 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="132">
@@ -14357,19 +14669,19 @@
         <li class="covered" data-hits="1" data-linenumber="140">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Female&#39;</code>
+          <code class="ruby">    gender 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="141">
           <span class="hits">1</span>
           
-          <code class="ruby">    is_a_smoker false</code>
+          <code class="ruby">    is_a_smoker 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="142">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly false</code>
+          <code class="ruby">    pet_friendly 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="143">
@@ -14519,19 +14831,19 @@
         <li class="covered" data-hits="1" data-linenumber="167">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Male&#39;</code>
+          <code class="ruby">    gender 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="168">
           <span class="hits">1</span>
           
-          <code class="ruby">    smoker true</code>
+          <code class="ruby">    smoker 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="169">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly true</code>
+          <code class="ruby">    pet_friendly 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="170">
@@ -14585,19 +14897,19 @@
         <li class="covered" data-hits="1" data-linenumber="178">
           <span class="hits">1</span>
           
-          <code class="ruby">    gender &#39;Male&#39;</code>
+          <code class="ruby">    gender 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="179">
           <span class="hits">1</span>
           
-          <code class="ruby">    is_a_smoker true</code>
+          <code class="ruby">    is_a_smoker 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="180">
           <span class="hits">1</span>
           
-          <code class="ruby">    pet_friendly true</code>
+          <code class="ruby">    pet_friendly 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="181">
@@ -14660,43 +14972,271 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="191">
+        <li class="covered" data-hits="1" data-linenumber="191">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  factory :combined_user_4, :parent =&gt; :user do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="192">
           <span class="hits">1</span>
           
-          <code class="ruby">  factory :admin do</code>
+          <code class="ruby">    email &quot;combined_user_4@gmail.com&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="193">
           <span class="hits">1</span>
           
-          <code class="ruby">    email &quot;admin@gmail.com&quot;</code>
+          <code class="ruby">    password &quot;top_secret&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="194">
           <span class="hits">1</span>
           
-          <code class="ruby">    password &quot;topsecret&quot;</code>
+          <code class="ruby">    password_confirmation &quot;top_secret&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="195">
+        <li class="never" data-hits="" data-linenumber="195">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="196">
           <span class="hits">1</span>
           
-          <code class="ruby">    password_confirmation &quot;topsecret&quot;</code>
+          <code class="ruby">    factory :user_with_both_4 do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="196">
+        <li class="covered" data-hits="1" data-linenumber="197">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      after(:create) do |combined_user_4|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="198">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        create(:preferences_for_combined_4, user: combined_user_4)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="199">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        create(:profile_for_combined_4, user: combined_user_4)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="200">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="201">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="202">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="197">
+        <li class="never" data-hits="" data-linenumber="203">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="204">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :preferences_for_combined_4, :parent =&gt; :preferences do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="205">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    gender 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="206">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    smoker 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="207">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    pet_friendly 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="208">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    cleanliness_level 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="209">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    outgoingness_level 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="210">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    quietness_level 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="211">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    looking_for_residence 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="212">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="213">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="214">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :profile_for_combined_4, :parent =&gt; :profile do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="215">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user_name &#39;combined-username-4&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="216">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    gender 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="217">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    is_a_smoker 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="218">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    pet_friendly 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="219">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    cleanliness_level 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="220">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    outgoingness_level 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="221">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    quietness_level 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="222">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    has_residence_already 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="223">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    street &#39;120 Broadway&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="224">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    city &#39;New York&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="225">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    state &#39;NY&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="226">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    postal_code &#39;10027&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="227">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="228">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="229">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="230">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  factory :admin do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="231">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    email &quot;admin@gmail.com&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="232">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    password &quot;topsecret&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="233">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    password_confirmation &quot;topsecret&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="234">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="235">
           
           
           <code class="ruby">end</code>

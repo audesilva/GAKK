@@ -26,12 +26,36 @@ class Match < ApplicationRecord
   end
 
   def self.get_percent_match(pref, prof)
-    gender_score = (pref.gender == prof.gender) ? 100 : 0
-    smoker_score = (pref.smoker == prof.is_a_smoker) ? 100 : 0
-    pet_friendly_score = (pref.pet_friendly == prof.pet_friendly) ? 100 : 0
-    cleanliness_level_score   = Match.get_attribute_weight(pref.cleanliness_level, prof.cleanliness_level)
-    outgoingness_level_score  = Match.get_attribute_weight(pref.outgoingness_level, prof.outgoingness_level)
-    quietness_level_score     = Match.get_attribute_weight(pref.quietness_level, prof.quietness_level)
+    if (pref.gender != 0)
+      gender_score = Match.get_attribute_weight_2(pref.gender, prof.gender)
+    else
+      gender_score = Match.get_attribute_weight_2(prof.gender, prof.gender)
+    end
+    if (pref.smoker != 0)
+      smoker_score = Match.get_attribute_weight_2(pref.smoker, prof.is_a_smoker)
+    else
+      smoker_score = Match.get_attribute_weight_2(prof.is_a_smoker, prof.is_a_smoker)
+    end
+    if (pref.pet_friendly != 0)
+      pet_friendly_score = Match.get_attribute_weight_2(pref.pet_friendly, prof.pet_friendly)
+    else
+      pet_friendly_score = Match.get_attribute_weight_2(prof.pet_friendly, prof.pet_friendly)
+    end
+    if (pref.cleanliness_level != 0)
+      cleanliness_level_score   = Match.get_attribute_weight_5(pref.cleanliness_level, prof.cleanliness_level)
+    else
+      cleanliness_level_score  = Match.get_attribute_weight_5(prof.cleanliness_level, prof.cleanliness_level)
+    end
+    if (pref.outgoingness_level != 0)
+      outgoingness_level_score  = Match.get_attribute_weight_5(pref.outgoingness_level, prof.outgoingness_level)
+    else
+      outgoingness_level_score  = Match.get_attribute_weight_5(prof.outgoingness_level, prof.outgoingness_level)
+    end
+    if (pref.quietness_level != 0)
+      quietness_level_score     = Match.get_attribute_weight_5(pref.quietness_level, prof.quietness_level)
+    else
+      quietness_level_score  = Match.get_attribute_weight_5(prof.quietness_level, prof.quietness_level)
+    end
     current_number_of_attributes = 6
     highest_potential_positive_sum = 100
     scores_sum = cleanliness_level_score + outgoingness_level_score + quietness_level_score + gender_score + smoker_score + pet_friendly_score
@@ -39,7 +63,7 @@ class Match < ApplicationRecord
     return percent_match
   end
 
-  def self.get_attribute_weight(value1,value2)
+  def self.get_attribute_weight_5(value1,value2)
     q = value1-value2
     q = q.abs
     if q == 0
@@ -54,4 +78,17 @@ class Match < ApplicationRecord
       return 0
     end
   end
+
+
+  def self.get_attribute_weight_2(value1,value2)
+    q = value1-value2
+    q = q.abs
+    if q == 0
+      return 100
+    else
+      return 0
+    end
+  end
+
+
 end

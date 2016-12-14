@@ -34,9 +34,9 @@ FactoryGirl.define do
 
   factory :profile, class: Profile do
     user_name 'existing-username'
-    gender 'Female'
-    is_a_smoker false
-    pet_friendly false
+    gender 2
+    is_a_smoker 1
+    pet_friendly 1
     cleanliness_level 1
     outgoingness_level 1
     quietness_level 1
@@ -61,9 +61,9 @@ FactoryGirl.define do
   end
 
   factory :preferences, class: Preferences do
-    gender 'Female'
-    smoker false
-    pet_friendly false
+    gender 2
+    smoker 1
+    pet_friendly 1
     cleanliness_level 1
     outgoingness_level 1
     quietness_level 1
@@ -88,9 +88,9 @@ FactoryGirl.define do
   end
 
   factory :preferences_for_combined_1, :parent => :preferences do
-    gender 'Female'
-    smoker false
-    pet_friendly false
+    gender 2
+    smoker 1
+    pet_friendly 1
     cleanliness_level 2
     outgoingness_level 2
     quietness_level 2
@@ -103,9 +103,9 @@ FactoryGirl.define do
   
   factory :profile_for_combined_1, :parent => :profile do
     user_name 'combined-username-1'
-    gender 'Female'
-    is_a_smoker false
-    pet_friendly false
+    gender 2
+    is_a_smoker 1
+    pet_friendly 1
     cleanliness_level 1
     outgoingness_level 1
     quietness_level 1
@@ -126,9 +126,9 @@ FactoryGirl.define do
   end
 
   factory :preferences_for_combined_2, :parent => :preferences do
-    gender 'Female'
-    smoker false
-    pet_friendly false
+    gender 2
+    smoker 1
+    pet_friendly 1
     cleanliness_level 2
     outgoingness_level 2
     quietness_level 2
@@ -137,9 +137,9 @@ FactoryGirl.define do
   
   factory :profile_for_combined_2, :parent => :profile do
     user_name 'combined-username-2'
-    gender 'Female'
-    is_a_smoker false
-    pet_friendly false
+    gender 2
+    is_a_smoker 1
+    pet_friendly 1
     cleanliness_level 1
     outgoingness_level 1
     quietness_level 1
@@ -164,9 +164,9 @@ FactoryGirl.define do
   end
 
   factory :preferences_for_combined_3, :parent => :preferences do
-    gender 'Male'
-    smoker true
-    pet_friendly true
+    gender 1
+    smoker 2
+    pet_friendly 2
     cleanliness_level 5
     outgoingness_level 5
     quietness_level 5
@@ -175,12 +175,50 @@ FactoryGirl.define do
   
   factory :profile_for_combined_3, :parent => :profile do
     user_name 'combined-username-3'
-    gender 'Male'
-    is_a_smoker true
-    pet_friendly true
+    gender 1
+    is_a_smoker 2
+    pet_friendly 2
     cleanliness_level 5
     outgoingness_level 5
     quietness_level 5
+    has_residence_already 1
+    street '120 Broadway'
+    city 'New York'
+    state 'NY'
+    postal_code '10027'
+  end
+
+  factory :combined_user_4, :parent => :user do
+    email "combined_user_4@gmail.com"
+    password "top_secret"
+    password_confirmation "top_secret"
+    
+    factory :user_with_both_4 do
+      after(:create) do |combined_user_4|
+        create(:preferences_for_combined_4, user: combined_user_4)
+        create(:profile_for_combined_4, user: combined_user_4)
+      end
+    end
+  end
+
+  factory :preferences_for_combined_4, :parent => :preferences do
+    gender 0
+    smoker 1
+    pet_friendly 2
+    cleanliness_level 2
+    outgoingness_level 1
+    quietness_level 1
+    looking_for_residence 0
+  end
+  
+  factory :profile_for_combined_4, :parent => :profile do
+    user_name 'combined-username-4'
+    gender 2
+    is_a_smoker 1
+    pet_friendly 1
+    cleanliness_level 2
+    outgoingness_level 2
+    quietness_level 2
     has_residence_already 1
     street '120 Broadway'
     city 'New York'

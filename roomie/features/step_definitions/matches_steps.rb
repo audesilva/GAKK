@@ -2,6 +2,10 @@ Given(/^I am an existing user with a profile and a preference$/) do
   @@user_with_both_1 = FactoryGirl.create(:user_with_both_1)
 end
 
+Given(/^I am an existing user with a profile and a partial preference$/) do
+  @@user_with_both_4 = FactoryGirl.create(:user_with_both_4)
+end
+
 Given(/^other users exist with profiles that are similar\.$/) do
   @user_with_both_2 = FactoryGirl.create(:user_with_both_2)
 end

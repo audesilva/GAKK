@@ -9,7 +9,7 @@
 
   <p>
     <strong>Gender:</strong>
-    <%= @profile ? @profile.gender : "" %>
+    <%= @profile ? Profile.profileGender.key(@profile.gender) : "" %>
   </p>
 
   <p>

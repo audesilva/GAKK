@@ -4,7 +4,7 @@
 
 <p>
   <strong>Gender:</strong>
-  <%= @preferences ? @preferences.gender : ""%>
+  <%= @preferences ? Preferences.preferencesGender.key(@preferences.gender) : ""%>
 </p>
 
 <p>
